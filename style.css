@@ -1,0 +1,166 @@
+:root {
+    --background-color: #800080;
+    --text-color: #333;
+    --accent-color: #4a8e91;
+    --highlight-color: #6800bd;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("Assets/Syndra Skins/WitheredRoseSkin_HD.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+header {
+    color: var(--highlight-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.Body_Container{
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    height: 80%;
+    width:  70%;
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    background-color: #1e2130;
+
+}
+
+.nav-list .nav-item {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-list .nav-item .nav-link {
+    text-decoration: none;
+    color: cornflowerblue;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Add transition property */
+
+}
+
+.nav-list .nav-item a:hover {
+    color: var(--accent-color);
+}
+
+.heading{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 1%;
+    flex:1;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    margin: 1%;
+    flex: 5;
+    overflow: hidden;
+}
+.tab-heading{
+    height: 50px;
+    width: 90%;
+    margin: 10px;
+    border-radius: 12px;
+    background-color: #333;
+    border: 0px;
+    
+}
+.heading-text{
+    color: white;
+    font-family: "Poppins", Sans-serif;
+    font-size: 16px;
+    font-weight: 700;}
+
+
+.Ability_Container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    background-color: rgb(201, 112, 201);
+}
+.Ability_Container#skinPanel{
+    flex-direction: column;
+    display: flex;
+}
+.skinPanelRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+}
+.Ability_Box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.Ability_Icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.Ability_Text {
+    flex: 2;
+    padding: 20px;
+}
+
+.accordion {
+    flex: 1;
+    background-color: rgb(167, 96, 233);
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 18px;
+    width: 95%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.accordion.active, .accordion:hover {
+    background-color: blueviolet;
+}
+.tab-heading.active, .tab-heading:hover {
+    background-color: #474747;
+}
+
+.panel {
+    width: 95%;
+
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+.skin-accordion:hover {
+    background-color: var(--accent-color);
+}
+.skin-image {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Add some spacing between images */
+}
